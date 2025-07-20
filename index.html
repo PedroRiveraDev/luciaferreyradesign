@@ -649,25 +649,24 @@
 		</div><!--/.big-text-->
 	</div><!--/.bg-->
 
+	<!--CONTACTO START-->
 	<div id="contact" class="content clearfix">
 		<div class="container">
 			<div class="top-content clearfix">
 				<i class="fa fa-hand-peace-o content-icon"></i>
-				<h3 class="content-title">Contact Us</h3>
-				<p class="sub-title">Molly starts changing physically, but isn’t sure of the result or if she can
-					reverse it, which sends her into a panic.</p>
+				<h3 class="content-title">LF DESIGN - Cotización</h3>
+				<p class="sub-title">Bienvenido(a), para realizar su cotización necesitaremos que responda las siguientes preguntas, enseguida nos pondremos en contacto con usted y programar una videollamada para que conozca nuestro proceso de diseño creativo.</p>
 			</div><!--/.top-content-->
 		</div><!--/.container-->
-		<div id="map_canvas" class="map_canvas"><!--DISPLAY GOOGLE MAP HERE--></div>
 
 		<!--MAP MARKER CONTENT-->
 		<div class="hidden map-content">
 			<div class="box-map">
 				<img src="images/maps.jpg" alt="">
-				<h3>Our Office</h3>
-				<p><b>Address:</b> 11231 Buah Batu Bandung</p>
-				<p><b>Phone:</b> 987-654-321 </p>
-				<p><b>Email:</b> company-email@email.com</p>
+				<h3>Nuestra oficina</h3>
+				<p><b>Ubicación:</b> Lima, Perú</p>
+				<p><b>Teléfono:</b> +51 987 654 321</p>
+				<p><b>Email:</b> luciaferreyradesign@gmail.com</p>
 			</div>
 		</div>
 		<!--MAP MARKER CONTENT END-->
@@ -676,54 +675,79 @@
 			<div class="row bottom-content">
 
 				<div class="col-md-4">
-					<h3 class="small-title"><i class="fa fa-building-o"></i> Address</h3>
-					<p>11231 Buah Batu Bandung <br>Indonesia 40282</p>
+					<h3 class="small-title"><i class="fa fa-building-o"></i> Dirección</h3>
+					<p>Argentina</p>
 					<div class="spacing20"></div>
 
-
-					<h3 class="small-title"><i class="fa fa-phone"></i> Phone</h3>
-					<p>987-654-321 <br>982-872-210</p>
+					<h3 class="small-title"><i class="fa fa-phone"></i> Teléfono</h3>
+					<p>+51 987 654 321</p>
 					<div class="spacing20"></div>
 
 					<h3 class="small-title"><i class="fa fa-envelope"></i> Email</h3>
-					<p><a href="#">company-email@email.com</a></p>
+					<p><a href="mailto:luciaferreyradesign@gmail.com">luciaferreyradesign@gmail.com</a></p>
 					<div class="spacing20"></div>
 				</div><!--/.col-md-4-->
-
-
 
 				<div id="contact-form" class="col-md-8 clearfix">
 					<div id="form-wrapper">
 						<div id="form-inner">
-							<div id="ErrResults"><!-- retrive Error Here --></div>
-							<div id="MainResult"><!-- retrive response Here --></div>
+							<div id="ErrResults"></div>
+							<div id="MainResult"></div>
 							<div id="MainContent">
 								<form id="MyContactForm" name="MyContactForm" method="post">
 									<p class="name">
-										<input type="text" name="name" id="name" placeholder="Your Name ...">
-										<label for="name" id="nameLb"><span class="error">*Name Field
-												Required</span></label>
+										<input type="text" name="name" id="name" placeholder="¿Cuál es tu nombre?">
+										<label for="name" id="nameLb"><span class="error">*Este campo es obligatorio</span></label>
 									</p>
 									<p>
-										<input type="email" name="email" id="email" placeholder="Your Email ...">
+										<input type="email" name="email" id="email" placeholder="E-mail">
 										<label for="email" id="emailLb">
-											<span class="error error1">*Email Field Required</span>
-											<span class="error error2">*Email Not Valid</span>
+											<span class="error error1">*Campo obligatorio</span>
+											<span class="error error2">*Correo no válido</span>
 										</label>
 									</p>
 									<p>
-										<input type="text" name="phone" id="phone" placeholder="Your Telephone ...">
-										<label for="phone" id="phoneLb"><span class="error">*Telephone Field
-												Required</span></label>
+										<input type="text" name="phone" id="phone" placeholder="Teléfono">
+										<label for="phone" id="phoneLb"><span class="error">*Campo obligatorio</span></label>
+									</p>
+									<p class="contact-method">
+										<label class="radio-label">¿Por qué vía te gustaría ser contactado?</label>
+										<div class="radio-group">
+											<label><input type="radio" name="contactMethod" value="whatsapp"> WhatsApp</label>
+											<label><input type="radio" name="contactMethod" value="correo"> Correo</label>
+										</div>
+									</p>
+									<p class="project-type">
+										<label class="radio-label">Tipo de Proyecto - Seleccione un Servicio que más se adapte a sus necesidades.</label>
+										<div class="radio-group">
+											<label><input type="radio" name="projectType" value="nuevo"> DISEÑO DE ESPACIO - NUEVO (ya tiene piso, acabados quiero implementar mobiliarios nuevos)</label>
+											<label><input type="radio" name="projectType" value="desde-cero"> DISEÑO DE ESPACIO - DESDE 0 (No tiene acabados, no tiene piso, no tiene revestimientos)</label>
+											<label><input type="radio" name="projectType" value="remodelacion"> DISEÑO DE ESPACIO - REMODELACIÓN (muebles, acabados, pisos existentes que cambiar)</label>
+											<label><input type="radio" name="projectType" value="comercial"> DISEÑO COMERCIAL (Crear un espacio de su negocio, conectando el branding de su marca)</label>
+										</div>
+									</p>
+									<p>
+										<input type="text" name="ambientes" id="ambientes" placeholder="¿Para qué ambientes serían? (nómbralos)">
+										<label for="ambientes" id="ambientesLb"><span class="error">*Campo obligatorio</span></label>
+									</p>
+									<p>
+										<input type="text" name="size" id="size" placeholder="Tamaño en m2 (de cada ambiente)">
+										<label for="size" id="sizeLb"><span class="error">*Campo obligatorio</span></label>
+									</p>
+									<p class="file-upload">
+										<label for="fileUpload">Puedes adjuntar aquí fotos o planos de tus ambientes</label>
+										<input type="file" name="fileUpload" id="fileUpload" multiple accept="image/*,.pdf,.dwg">
+										<small>Sube 1 archivo compatible. Tamaño máximo: 10 MB.</small>
 									</p>
 									<p class="textarea">
-										<textarea name="message" id="message" placeholder="Your Message ..."
-											rows="4"></textarea>
-										<label for="message" id="messageLb"><span class="error">*Message Field
-												Required</span></label>
+										<textarea name="furniture" id="furniture" placeholder="¿Tus ambientes tienen muebles que te gustarían mantener? (si hay, cuales son)" rows="3"></textarea>
+									</p>
+									<p>
+										<input type="text" name="location" id="location" placeholder="¿En qué país y distrito se encuentra?">
+										<label for="location" id="locationLb"><span class="error">*Campo obligatorio</span></label>
 									</p>
 									<div class="clearfix"></div>
-									<a href="#" class="contact-btn">Send Message</a>
+									<a href="#" class="contact-btn">Enviar</a>
 								</form>
 							</div><!--MainContent-->
 						</div><!--form-inner-->
@@ -732,8 +756,8 @@
 				</div><!--/.contact-form-->
 			</div><!--/.row-->
 		</div><!--/contact-list-->
-
 	</div><!--/.contact-->
+	<!--CONTACTO END-->
 
 	<footer class="footer clearfix">
 		<div class="container">
